@@ -1,0 +1,31 @@
+{
+  "name": "gents",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "nodemon ./bin/www",
+    "dev:ts": "tsc -w",
+    "server": "concurrently yarn:dev:*",
+    "init": "git submodule init && git submodule update",
+    "pull": "git pull origin master && git submodule foreach git pull"
+  },
+  "dependencies": {
+    "@types/node": "^14.14.16",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "socket.io": "^3.0.4",
+    "uglify-js": "^3.12.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/socket.io": "^2.1.12",
+    "nodemon": "^2.0.6",
+    "typescript": "^4.1.3"
+  }
+}
