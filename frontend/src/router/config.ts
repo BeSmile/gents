@@ -3,10 +3,17 @@
  * @Version: 
  * @Author: linjinzhi
  * @Date: 2021-01-15 12:19:27
- * @LastEditors: linjinzhi
- * @LastEditTime: 2021-01-15 15:13:02
+ * @LastEditors: BeSmile
+ * @LastEditTime: 2021-01-19 10:43:16
  */
 export default [{
+  path: '/build',
+  component: 'layouts/ClassicLayout',
+  routes: [{
+      path: '/data',
+      component: 'build/Data/index',
+  }]
+}, {
     path: '/qqsg',
     component: 'layouts/BaseLayout',
     routes: [{
@@ -19,7 +26,7 @@ export default [{
         path: '/experience',
         component: 'qqsg/Experience/index',
     }, {
-        path: '/',
+        path: '/',      
         component: 'qqsg/Home/index',
     },]
 }, {

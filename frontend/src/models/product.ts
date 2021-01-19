@@ -1,4 +1,4 @@
-import * as Api from '../services/api';
+import * as Api from '@services/api';
 
 export default {
     namespace: "product",
@@ -7,13 +7,13 @@ export default {
     },
     effects: {
         *fetchProduct(action, {put, call}) {
-           try {
+          try {
               const books = yield call(Api.fetchBook);
               console.log('fetch books', books);
               yield put({type: "addProduct", payload: books.reviews});
-           } catch (e) {
+          } catch (e) {
               yield put({type: "USER_FETCH_FAILED", message: e.message});
-           }
+          }
         }
     },
     reducers: {
