@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Version: 
+ * @Author: BeSmile
+ * @Date: 2021-01-15 12:19:27
+ * @LastEditors: BeSmile
+ * @LastEditTime: 2021-01-19 10:45:32
+ */
 declare var window: any;
 import "./index.css";
 import React from 'react';
@@ -8,7 +16,7 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from 'react-redux';
 import injectReducers from '@utils/injectReducers';
 import createSagaMiddleware from 'redux-saga';
-import getSaga from './utils/getSaga';
+import getSaga from '@utils/getSaga';
 
 // MODELS_PATH 根据模型来进行model的注册
 let models = MODELS_PATH.map((item: string) => ( require(`./models/${item}`).default ));

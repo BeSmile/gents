@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Version: 
+ * @Author: BeSmile
+ * @Date: 2021-01-15 12:19:27
+ * @LastEditors: BeSmile
+ * @LastEditTime: 2021-01-19 10:50:04
+ */
 interface Window {
   //在这里声明xxx之后就能在文件中 window.xxx这样调用了
    // xxx: any;
@@ -10,6 +18,9 @@ declare module '*.jpeg';
 declare module '*.gif';
 declare module '*.bmp';
 declare module '*.tiff';
+
+declare module '*.less';
+declare module '*.json';
 
 
 declare var ENV_PATH: string;
