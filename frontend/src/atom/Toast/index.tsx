@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Version: 
+ * @Author: BeSmile
+ * @Date: 2021-01-15 12:19:27
+ * @LastEditors: BeSmile
+ * @LastEditTime: 2021-01-19 12:30:11
+ */
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import Snackbar from '@atom/Snackbar';
@@ -20,7 +28,6 @@ const startMSMQ = (dispatch) => {
 const ToastUI = (props) => {
     const { toasts, dispatch } = props;
     useEffect(() => {
-        console.log('init once');
         startMSMQ(dispatch);
     }, []);
     return (

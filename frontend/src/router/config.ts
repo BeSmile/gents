@@ -4,7 +4,7 @@
  * @Author: linjinzhi
  * @Date: 2021-01-15 12:19:27
  * @LastEditors: BeSmile
- * @LastEditTime: 2021-01-19 10:43:16
+ * @LastEditTime: 2021-01-19 11:28:53
  */
 export default [{
   path: '/build',
@@ -12,7 +12,13 @@ export default [{
   routes: [{
       path: '/data',
       component: 'build/Data/index',
-  }]
+  }, {
+    path: '/design',
+    component: 'build/Design/index',
+  }, {
+    path: '/workflow',
+    component: 'build/WorkFlow/index',
+  }],
 }, {
     path: '/qqsg',
     component: 'layouts/BaseLayout',
